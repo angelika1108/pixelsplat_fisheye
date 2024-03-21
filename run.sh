@@ -7,7 +7,10 @@ python3 -m src.main +experiment=acid mode=test exp_name='exp_test_acid_rnd' hydr
 python3 -m src.main +experiment=acid mode=test exp_name='exp_test_acid' hydra.run.dir='outputs/exp_test_acid' dataset/view_sampler=evaluation dataset.view_sampler.index_path=assets/evaluation_index_acid.json
 
 
-
+Acces to machine
+ssh -X angelika@10.201.20.7
+conda activate fisheye_psplat  # activate the conda environment, here it's possible to install new libraries if needed but only after activating the environment
+cd fisheye_psplat
 
 
 
