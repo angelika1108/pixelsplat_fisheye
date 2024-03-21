@@ -46,9 +46,6 @@ def train(cfg_dict: DictConfig):
         hydra.core.hydra_config.HydraConfig.get()["runtime"]["output_dir"]
     )
     print(cyan(f"Saving outputs to {output_dir}."))
-    # latest_run = output_dir.parents[1] / "latest-run"
-    # os.system(f"rm {latest_run}")
-    # os.system(f"ln -s {output_dir} {latest_run}")
 
     # Set up logging with wandb.
     callbacks = []
