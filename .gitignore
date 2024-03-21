@@ -162,12 +162,13 @@ cython_debug/
 /datasets
 /dataset_cache
 
-# Outputs
 /outputs
 /lightning_logs
 /checkpoints
 /checkpoint_init
 /pretrained_models
+/src/taming-transformers/
+/diff-gaussian-rasterization-modified
 
 .bashrc
 /launcher_venv
