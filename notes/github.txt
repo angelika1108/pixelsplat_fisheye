@@ -1,0 +1,28 @@
+﻿Github
+
+
+git clone https://github.com/dcharatan/pixelsplat.git  - clone a github repository
+git clone --recurse-submodules https://github.com/dcharatan/pixelsplat.git - clone a github repository with other github repositories within them. This cloning is recommended if we are not sure if there are other repositories within the repository we want to clone. If we are sure that it does not contain other repositories then we can use “git clone”.
+
+
+Push changes on Github (every time we code a new element but at least every three days):
+1. git status  - list of files changed the git repository
+2. git diff code.py  - see the changes made in the file code.py
+        git diff code2.py  - see the changes in code2.py
+3. git add code.py  - stage the changes made in code.py
+        git checkout code2.py - remove all changes in code2.py since last commit
+            (git add .  - add all changes, this is not recommended unless we are sure about all changes)
+4. git commit -m “adding data loading”   - save the changes with message 
+5. git push   - update the changes
+
+
+Pushing changes regularly helps tracking back the code and finding problems (eg. if the results are not reproducible anymore then probably there is a problem). It’s possible to see changes between different commits (i.e. different versions) and it’s also possible to reset the code how it was on a given day in the past.
+
+
+.gitignore file contains files and folders that we don’t want to push on github. Eg. we don’t want to push large files, datasets, checkpoints, some of the outputs, etc., because the size of a github repository is limited.
+
+
+README.md file contains the description of the project and it usually also contains information about necessary installations, datasets, how to run training, testing, visualisations, etc.
+
+
+requirements.txt file contains the necessary libraries for running the code. This file is not obligatory (although it is usually present in a repository) and the README.md file can also contain information about installations.
