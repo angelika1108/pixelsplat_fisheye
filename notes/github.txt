@@ -25,4 +25,5 @@ Pushing changes regularly helps tracking back the code and finding problems (eg.
 README.md file contains the description of the project and it usually also contains information about necessary installations, datasets, how to run training, testing, visualisations, etc.
 
 
-requirements.txt file contains the necessary libraries for running the code. This file is not obligatory (although it is usually present in a repository) and the README.md file can also contain information about installations.
+requirements.txt file contains the necessary libraries for running the code. It is usually present in a repository and the README.md file can also contain information about installations.
+
