@@ -5,6 +5,16 @@ git clone https://github.com/dcharatan/pixelsplat.git  - clone a github reposito
 git clone --recurse-submodules https://github.com/dcharatan/pixelsplat.git - clone a github repository with other github repositories within them. This cloning is recommended if we are not sure if there are other repositories within the repository we want to clone. If we are sure that it does not contain other repositories then we can use “git clone”.
 
 
+Installing a library from a github repository (here it is the Differential Gaussian rasterization library)
+Type in terminal:
+```
+cd pixelsplat_fisheye   # go in the project github repository folder on the machine
+git clone --recurse-submodules https://github.com/dcharatan/diff-gaussian-rasterization-modified.git
+cd diff-gaussian-rasterization-modified   # go in the cloned repository folder
+pip install -e .  # install library
+```
+
+
 Push changes on Github (every time we code a new element but at least every three days):
 1. git status  - list of files changed the git repository
 2. git diff code.py  - see the changes made in the file code.py
