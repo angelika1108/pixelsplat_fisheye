@@ -169,6 +169,7 @@ cython_debug/
 /pretrained_models
 /src/taming-transformers/
 /diff-gaussian-rasterization-modified
+/data_processing/github_repos
 
 .bashrc
 /launcher_venv
