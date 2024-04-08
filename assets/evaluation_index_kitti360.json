@@ -1,1 +1,8 @@
-{"kitti360_cam02_0_99": {"context": [1, 5], "target": [2, 3, 4]}}
+{"kitti360_cam02_0_249": {"context": [1, 5], "target": [2, 3, 4]}, 
+"kitti360_cam02_0_249": {"context": [67, 89], "target": [71, 79, 85]},
+"kitti360_cam02_0_249": {"context": [25, 29], "target": [26, 27, 28]},
+"kitti360_cam02_0_249": {"context": [150, 154], "target": [151, 152, 153]},
+"kitti360_cam02_0_249": {"context": [180, 200], "target": [185, 190, 195]},
+"kitti360_cam02_0_249": {"context": [223, 227], "target": [224, 225, 226]},
+"kitti360_cam02_0_249": {"context": [113, 121], "target": [115, 120, 123]}
+}
