@@ -153,7 +153,7 @@ class ModelWrapper(LightningModule):
 
     def test_step(self, batch, batch_idx):
         batch: BatchedExample = self.data_shim(batch)
-
+        # breakpoint()
         b, v, _, h, w = batch["target"]["image"].shape
         assert b == 1
         if batch_idx % 100 == 0:
@@ -178,10 +178,18 @@ class ModelWrapper(LightningModule):
 
         # Save images.
         (scene,) = batch["scene"]
-        name = get_cfg()["wandb"]["name"]
-        path = self.test_cfg.output_path / name
+        # name = get_cfg()["wandb"]["name"]
+        # path = self.test_cfg.output_path / name
+        path = self.test_cfg.output_path
+        # breakpoint()
         for index, color in zip(batch["target"]["index"][0], output.color[0]):
-            save_image(color, path / scene / f"color/{index:0>6}.png")
+            scene_index = batch["target"]["index"][0][0].cpu().numpy()
+            # save_image(color, path / scene / f"scene{scene_index}/{index:0>6}.png")
+            save_image(color, path / f"{scene}_{scene_index}/{index:0>6}.png")
+        for index, color in zip(
+            batch["context"]["index"][0], batch["context"]["image"][0]
+        ):
+            save_image(color, path / f"{scene}_{scene_index}/context/{index:0>6}.png")
 
     def on_test_end(self) -> None:
         name = get_cfg()["wandb"]["name"]
