@@ -48,7 +48,8 @@ python3 -m src.scripts.compute_metrics +experiment=kitti360 +evaluation=kitti360
 
 
 # Estimated rectified fisheye camera parameters by NerfStudio
-"fl_x": 947.5964796581311   / 700
-"fl_y": 440.9180126120826  / 700
-"cx": 216.2577815920706   / 700
-"cy": 335.75905987919214  / 700
+"fl_x": 284.38854133908575  / 700
+"fl_y": 286.4928413680512  / 700
+"cx": 350.0434636770415  / 700
+"cy": 350.4548988033838  / 700
+
