@@ -170,6 +170,7 @@ cython_debug/
 /src/taming-transformers/
 /diff-gaussian-rasterization-modified
 /data_processing/github_repos
+/test_fisheye_images
 
 .bashrc
 /launcher_venv
